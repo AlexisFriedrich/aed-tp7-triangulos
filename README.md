@@ -1,1 +1,1 @@
-# aed-tp7-triangulos
+enum (o tipos enumerados) se utiliza para darle valor a un conjunto de palabras, empezando desde el 0 por default y aumentando de a uno, pero si se le asigna un valor a uno de los elementos cundo se anuncia el conjunto, ese elemento va a pasar a valer el numero asignado y el siguiente elemento va a tener el valor siguiente al asignado.
