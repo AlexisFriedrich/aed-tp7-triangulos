@@ -1,0 +1,39 @@
+/*tipos de triangulos
+Alexis Friedrich
+26/05/2015
+*/
+#include <iostream>
+using namespace std;
+double getnumeropositivo();
+int main()
+{
+double a= getnumeropositivo();
+double b= getnumeropositivo();
+double c= getnumeropositivo();
+while (a+b<=c or a+c<=b or b+c<=a)
+	{
+	cout<<"no es triangulo, ingrese nuevamente los lados"<<endl;
+	double a= getnumeropositivo();
+	double b= getnumeropositivo();
+	double c= getnumeropositivo();
+	}
+if (a==b and a==c)
+	cout<<"triangulo equilatero"<<endl;
+if (a!=b and a==c and c!=b and b!=c)
+	cout<<"triangulo isoceles"<<endl;
+if (a!=b and a!=c and b!=c)
+	cout<<"triangulo escaleno"<<endl;
+	
+}
+
+double getnumeropositivo()
+{
+double x;
+cout<<"ingrese numero positivo"<<endl;
+cin>>x;
+while (x<=0)
+	{cout<<"ingrese numero positivo"<<endl;
+	cin>>x;
+	}
+return x;
+}
